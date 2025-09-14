@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh Bhardwaj - Creative Video Editor & Graphic Designer</title>
+    <meta name="description" content="Professional Video Editor & Graphic Designer portfolio showcasing creative work in motion graphics, thumbnails, branding design and video editing.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">HB</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <button class="admin-btn" onclick="toggleAdmin()">
+                        <i class="fas fa-cog"></i>
+                    </button>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+                <div class="hero-image">
+                    <div class="image-placeholder" id="hero-image-container">
+                        <i class="fas fa-user-circle"></i>
+                        <span class="upload-text">Click to upload your photo</span>
+                    </div>
+                </div>
+                <h1 class="hero-title">
+                    Harsh <span class="neon-text">Bhardwaj</span>
+                </h1>
+                <p class="hero-tagline">Creative Video Editor & Graphic Designer</p>
+                <p class="hero-description">
+                    Transforming ideas into stunning visual experiences through innovative video editing, 
+                    motion graphics, and creative design solutions.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">
+                        <i class="fas fa-play"></i>
+                        View My Work
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fas fa-envelope"></i>
+                        Get In Touch
+                    </a>
+                </div>
+                <div class="hero-social">
+                    <a href="#" class="social-link" data-platform="youtube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" class="social-link" data-platform="instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link" data-platform="behance">
+                        <i class="fab fa-behance"></i>
+                    </a>
+                    <a href="#" class="social-link" data-platform="linkedin">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-decoration">
+                <div class="floating-element element-1"></div>
+                <div class="floating-element element-2"></div>
+                <div class="floating-element element-3"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">About <span class="neon-text">Me</span></h2>
+                <p class="section-subtitle">Passionate creator with an eye for detail</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <h3>Hello, I'm Harsh Bhardwaj</h3>
+                    <p>
+                        A passionate Video Editor and Graphic Designer with over 5 years of experience 
+                        creating compelling visual content. I specialize in bringing stories to life through 
+                        dynamic video editing, eye-catching motion graphics, and stunning visual design.
+                    </p>
+                    <p>
+                        My journey in the creative industry has led me to work with diverse clients, 
+                        from content creators to established brands, helping them communicate their message 
+                        through powerful visual storytelling.
+                    </p>
+                    
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number">150+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-container" data-aos="fade-left">
+                    <h3>Skills & Expertise</h3>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h4><i class="fas fa-video"></i> Video Editing</h4>
+                            <div class="skill-list">
+                                <span class="skill-item">Adobe Premiere Pro</span>
+                                <span class="skill-item">Final Cut Pro</span>
+                                <span class="skill-item">DaVinci Resolve</span>
+                                <span class="skill-item">Color Grading</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h4><i class="fas fa-magic"></i> Motion Graphics</h4>
+                            <div class="skill-list">
+                                <span class="skill-item">After Effects</span>
+                                <span class="skill-item">Cinema 4D</span>
+                                <span class="skill-item">Blender</span>
+                                <span class="skill-item">Animation</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h4><i class="fas fa-paint-brush"></i> Design</h4>
+                            <div class="skill-list">
+                                <span class="skill-item">Photoshop</span>
+                                <span class="skill-item">Illustrator</span>
+                                <span class="skill-item">Figma</span>
+                                <span class="skill-item">Brand Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">My <span class="neon-text">Portfolio</span></h2>
+                <p class="section-subtitle">Showcasing my latest creative projects</p>
+            </div>
+            
+            <div class="portfolio-filters" data-aos="fade-up" data-aos-delay="200">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="video">Video Editing</button>
+                <button class="filter-btn" data-filter="motion">Motion Graphics</button>
+                <button class="filter-btn" data-filter="design">Graphic Design</button>
+                <button class="filter-btn" data-filter="thumbnail">Thumbnails</button>
+            </div>
+            
+            <div class="portfolio-grid" id="portfolio-grid">
+                <!-- Portfolio items will be dynamically loaded here -->
+            </div>
+            
+            <div class="portfolio-empty" id="portfolio-empty" style="display: none;">
+                <div class="empty-state">
+                    <i class="fas fa-folder-open"></i>
+                    <h3>No Projects Yet</h3>
+                    <p>Portfolio items will appear here once you start adding them.</p>
+                    <button class="btn btn-primary" onclick="toggleAdmin()">
+                        <i class="fas fa-plus"></i>
+                        Add First Project
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">My <span class="neon-text">Services</span></h2>
+                <p class="section-subtitle">Professional creative solutions for your brand</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Video Editing</h3>
+                    <p>Professional video editing services including color correction, audio mixing, and seamless transitions to create engaging content.</p>
+                    <ul class="service-features">
+                        <li>Color Grading</li>
+                        <li>Audio Enhancement</li>
+                        <li>Transition Effects</li>
+                        <li>Multi-camera Editing</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3>Motion Graphics</h3>
+                    <p>Eye-catching animated graphics and visual effects that bring your content to life with dynamic motion and storytelling.</p>
+                    <ul class="service-features">
+                        <li>2D/3D Animation</li>
+                        <li>Logo Animation</li>
+                        <li>Kinetic Typography</li>
+                        <li>Visual Effects</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <h3>Thumbnail Design</h3>
+                    <p>Compelling thumbnail designs that grab attention and increase click-through rates for your YouTube videos and social content.</p>
+                    <ul class="service-features">
+                        <li>YouTube Thumbnails</li>
+                        <li>Social Media Graphics</li>
+                        <li>A/B Testing Designs</li>
+                        <li>Brand Consistency</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Brand Design</h3>
+                    <p>Complete branding solutions including logo design, brand identity, and marketing materials that reflect your unique vision.</p>
+                    <ul class="service-features">
+                        <li>Logo Design</li>
+                        <li>Brand Identity</li>
+                        <li>Marketing Materials</li>
+                        <li>Style Guidelines</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Let's <span class="neon-text">Connect</span></h2>
+                <p class="section-subtitle">Ready to bring your vision to life</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Get In Touch</h3>
+                    <p>
+                        Ready to start your next creative project? Let's discuss how I can help 
+                        bring your vision to life through professional video editing and design services.
+                    </p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>harsh.bhardwaj@example.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <p>+91 9876543210</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Location</h4>
+                                <p>Mumbai, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-social">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-behance"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Service Needed</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="video-editing">Video Editing</option>
+                                <option value="motion-graphics">Motion Graphics</option>
+                                <option value="thumbnail-design">Thumbnail Design</option>
+                                <option value="brand-design">Brand Design</option>
+                                <option value="consultation">Consultation</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="budget">Project Budget</label>
+                            <select id="budget" name="budget">
+                                <option value="">Select budget range</option>
+                                <option value="500-1000">₹500 - ₹1,000</option>
+                                <option value="1000-5000">₹1,000 - ₹5,000</option>
+                                <option value="5000-10000">₹5,000 - ₹10,000</option>
+                                <option value="10000+">₹10,000+</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Project Details</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admin Panel -->
+    <div id="admin-panel" class="admin-panel">
+        <div class="admin-content">
+            <div class="admin-header">
+                <h3><i class="fas fa-cog"></i> Portfolio Admin</h3>
+                <button class="close-admin" onclick="toggleAdmin()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="admin-tabs">
+                <button class="admin-tab active" data-tab="projects">Projects</button>
+                <button class="admin-tab" data-tab="profile">Profile</button>
+            </div>
+            
+            <div class="admin-tab-content">
+                <!-- Projects Tab -->
+                <div id="projects-tab" class="tab-content active">
+                    <div class="admin-section">
+                        <h4>Add New Project</h4>
+                        <form id="project-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="project-title">Project Title</label>
+                                    <input type="text" id="project-title" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="project-category">Category</label>
+                                    <select id="project-category" required>
+                                        <option value="video">Video Editing</option>
+                                        <option value="motion">Motion Graphics</option>
+                                        <option value="design">Graphic Design</option>
+                                        <option value="thumbnail">Thumbnails</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="project-description">Description</label>
+                                <textarea id="project-description" rows="3"></textarea>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="project-thumbnail">Thumbnail URL</label>
+                                    <input type="url" id="project-thumbnail" placeholder="https://example.com/image.jpg">
+                                </div>
+                                <div class="form-group">
+                                    <label for="project-video">Video URL (Optional)</label>
+                                    <input type="url" id="project-video" placeholder="https://youtube.com/watch?v=...">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="project-links">External Links</label>
+                                <input type="text" id="project-links" placeholder="Behance, Instagram, etc. (comma-separated)">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="project-tags">Tags (comma-separated)</label>
+                                <input type="text" id="project-tags" placeholder="motion-graphics, 3d, animation">
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-plus"></i>
+                                Add Project
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <div class="admin-section">
+                        <h4>Manage Projects</h4>
+                        <div id="admin-projects-list">
+                            <!-- Project list will be populated here -->
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Profile Tab -->
+                <div id="profile-tab" class="tab-content">
+                    <div class="admin-section">
+                        <h4>Profile Settings</h4>
+                        <form id="profile-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="profile-name">Full Name</label>
+                                    <input type="text" id="profile-name" value="Harsh Bhardwaj">
+                                </div>
+                                <div class="form-group">
+                                    <label for="profile-email">Email Address</label>
+                                    <input type="email" id="profile-email" value="harsh.bhardwaj@example.com">
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="profile-phone">Phone Number</label>
+                                    <input type="tel" id="profile-phone" value="+91 9876543210">
+                                </div>
+                                <div class="form-group">
+                                    <label for="profile-location">Location</label>
+                                    <input type="text" id="profile-location" value="Mumbai, India">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="profile-photo">Profile Photo URL</label>
+                                <input type="url" id="profile-photo" placeholder="https://example.com/photo.jpg">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="profile-tagline">Professional Tagline</label>
+                                <input type="text" id="profile-tagline" value="Creative Video Editor & Graphic Designer">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="profile-description">Bio/Description</label>
+                                <textarea id="profile-description" rows="4">Transforming ideas into stunning visual experiences through innovative video editing, motion graphics, and creative design solutions.</textarea>
+                            </div>
+                            
+                            <h4 style="margin-top: 2rem;">Social Links</h4>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="social-youtube">YouTube URL</label>
+                                    <input type="url" id="social-youtube" placeholder="https://youtube.com/@channel">
+                                </div>
+                                <div class="form-group">
+                                    <label for="social-instagram">Instagram URL</label>
+                                    <input type="url" id="social-instagram" placeholder="https://instagram.com/username">
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="social-behance">Behance URL</label>
+                                    <input type="url" id="social-behance" placeholder="https://behance.net/username">
+                                </div>
+                                <div class="form-group">
+                                    <label for="social-linkedin">LinkedIn URL</label>
+                                    <input type="url" id="social-linkedin" placeholder="https://linkedin.com/in/username">
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-save"></i>
+                                Save Profile
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Harsh Bhardwaj. All rights reserved.</p>
+                <p>Crafted with <i class="fas fa-heart neon-text"></i> for creative excellence</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/portfolio.js"></script>
+</body>
+</html>
